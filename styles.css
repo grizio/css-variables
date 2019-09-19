@@ -1,0 +1,31 @@
+body {
+  background-color: var(--background-color);
+}
+
+h1 {
+  font-family: var(--title-font);
+  font-size: var(--font-size-large);
+  line-height: calc(var(--font-size-large) * var(--line-height-ratio));
+  color: var(--text-color);
+}
+
+p {
+  font-family: var(--main-font);
+  font-size: var(--font-size-base);
+  line-height: calc(var(--font-size-base) * var(--line-height-ratio));
+  color: var(--text-color);
+}
+
+pre, code {
+  background-color: var(--code-background);
+  color: var(--code-foreground);
+}
+
+pre {
+  padding: var(--space-base);
+}
+
+.reverse {
+  background-color: var(--primary-color);
+  --text-color: var(--primary-color-reverse);
+}

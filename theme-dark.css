@@ -1,0 +1,6 @@
+body.dark-mode {
+  --background-color: #37474f;
+  --primary-color: #8d6e63;
+  --primary-color-reverse: var(--silver);
+  --text-color: #b3e5fc;
+}

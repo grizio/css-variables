@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CSS Variables</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Modak|Roboto&display=swap">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="theme-dark.css">
+  <link rel="stylesheet" href="theme-a11y.css">
+  <link rel="stylesheet" href="theme-media.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="row">
+  <main class="col">
+    <section>
+      <h1>CSS Variables</h1>
+
+      <p>
+        Custom properties (sometimes referred to as CSS variables or cascading variables) are entities defined by CSS
+        authors that contain specific values to be reused throughout a document. They are set using custom property
+        notation (e.g., <code>--main-color: black;</code>) and are accessed using the var() function (e.g., color:
+        <code>var(--main-color);</code>).
+      </p>
+
+      <p>
+        Complex websites have very large amounts of CSS, often with a lot of repeated values. For example, the same
+        color might be used in hundreds of different places, requiring global search and replace if that color needs to
+        change. Custom properties allow a value to be stored in one place, then referenced in multiple other places. An
+        additional benefit is semantic identifiers. For example, <code>--main-text-color</code> is easier to understand
+        than <code>#00ff00</code>,
+        especially if this same color is also used in other contexts.
+      </p>
+      <p>
+        Custom properties are subject to the cascade and inherit their value from their parent.
+      </p>
+    </section>
+
+   <section class="reverse">
+     <h1>Basic usage</h1>
+
+     <p>
+       Declaring a custom property:
+     </p>
+
+     <pre>
+element {
+  --main-bg-color: brown;
+}
+     </pre>
+
+     <p>
+       Using the custom property:
+     </p>
+
+     <pre>
+element {
+  background-color: var(--main-bg-color);
+}
+     </pre>
+   </section>
+  </main>
+  <div class="col-200">
+    <p>
+      <label>
+        <input type="checkbox" id="themingDarkMode">
+        Dark mode
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" id="themingAccessibility">
+        Accessibility
+      </label>
+    </p>
+  </div>
+</div>
+
+<script src="theming.js"></script>
+</body>
+</html>

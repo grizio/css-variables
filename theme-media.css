@@ -1,0 +1,15 @@
+@media (max-width: 1024px) {
+  body {
+    --font-size-base: 0.8rem;
+    --font-size-large: 1.5rem;
+
+    --space-base: 4px;
+    --space-large: calc(2 * var(--space-base));
+  }
+}
+
+
+
+
+
+
